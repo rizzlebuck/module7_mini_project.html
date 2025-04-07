@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        /* Simple CSS to make the sections distinct */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 20px;
+            background: #ccc;
+            margin: 10px 0;
+        }
+
+        .skill-bar .skill-level {
+            height: 100%;
+            background: #4CAF50;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Home Page/Section -->
+    <header>
+        <h1>Nicholas Aranda</h1>
+        <p>Welcome to my portfolio!</p>
+        <img src="/Users/nicholasaranda/Documents/NickA_Small.png" alt="My Profile Picture" class="profile-img">
+    </header>
+
+    <!-- About Me Page/Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I am Nicholas, a passionate developer with a specialization in back-end. I'm currently pursuing a career in software engineering
+            and I'm eager to take on new challenges.</p>
+    </section>
+
+    <!-- Projects Page/Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Project 1: E-commerce API </h3>
+            <p>Description: A Flask-based web application designed for managing customers, orders, and product.</p>
+            <p>Technologies: Flask, SQLAlchemy, and Marshmallow for database operations and serialization</p>
+            <a href="https://github.com/rizzlebuck/mod6_mini_project" target="_blank">View on GitHub</a>
+        </div>
+        <div>
+            <h3>Project 2: Library Management System </h3>
+            <p>Description: A command-line Library Management System built with Python and MySQL </p>
+            <p>Technologies:Python and MySQL</p>
+            <a href="https://github.com/rizzlebuck/module5_mini_project" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Skills Page/Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <div>
+            <p>Python</p>
+            <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
+            <p>SQL</p>
+            <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
+            <p>HTML</p>
+            <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
+            <p>CSS</p>
+            <div class="skill-bar"><div class="skill-level" style="width: 20%;"></div></div>
+            <p>JavaScript</p>
+            <div class="skill-bar"><div class="skill-level" style="width: 20%;"></div></div>
+            <p>React</p>
+            <div class="skill-bar"><div class="skill-level" style="width: 20%;"></div></div>
+        </div>
+    </section>
+
+    <!-- Contact Page/Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="your-action-url" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <h3>Or find me on social media:</h3>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nicholas-aranda-73620a183/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- GitHub Repository -->
+    <section id="github-repository">
+        <h2>GitHub Repository</h2>
+        <p>Check out the code for this portfolio project and other projects on my GitHub repository:</p>
+        <a href="https://github.com/rizzlebuck" target="_blank">GitHub Repository</a>
+    </section>
+
+</body>
+
+</html>
